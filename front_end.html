@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Visualizer</title>
+    <style>
+        body {
+            background: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        input {
+            position: absolute;
+            top: 20px;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>V.P.S.K</h1>
+    <h3>@volpes12</h3>
+    <input type="file" id="audioFile" accept="audio/*">
+    <canvas id="visualizer"></canvas>
+
+    <!-- Link to external JavaScript file -->
+    <script src="Back_end.js"></script>
+</body>
+
+</html>
